@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "website.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <button><img id="home-icon" src = "icon/githubIcon.png"></button>
+            <div style = "display: flex; margin-right: 16px;" >
+                <input id = "search-box" type = "text" placeholder="Search or jump to...">
+                <span style = "margin-left: inherit" class="navigation-bar">
+                    <ul class = "cursor-pointer">
+                        <li>Pull requests</li>
+                        <li>Issues</li>
+                        <li>Marketplace</li>
+                        <li>Explore</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="navigation-icon stick-right">
+                <button>
+                    <div class="container"><img src = "icon/bell-icon.png"/></div>
+                </button>
+                <button>
+                    <div class="container"><img src = "./icon/personal-icon.png"></div>
+                    <i class="fa fa-caret-down white"></i>     
+                </button>
+            </div>
+        </header>
+        <section id="navigation-bar" class = "p-responsive center split-section">
+            <ul id="main-navigation-bar">
+                <li>Explore</li>
+                <li>Topics</li>
+                <li>Trending</li>
+                <li>Collections</li>
+                <li>Events</li>
+                <li>GitHub Sponsors</li>
+            </ul>
+            <button id = "email-updates-button" class = "stick-right">
+                Get email updates
+            </button>
+        </section>
+        <section class="body center-width70p">
+            <div class = "d-flex flex-items-center p-top-bottom32 p-left-right16">
+                <div class="mr-16 border br6 text-center" style="width:48px; height:48px; line-height:48px">
+                    #
+                </div>
+                <h1 class = "font-size-40">clone-coding</h1>
+                <button class = "stick-right border p16 br6">
+                    <i class="fa fa-star-o mr-8"></i>Star
+                </button>
+            </div>
+            <div class = "d-flex">
+                <div style="width: 75%; margin-right: 70px;">
+                    <div class="subhead" style="margin-bottom: 50px; ">
+                        <h2 style="margin-bottom: 10px;">Here are 20 public repositories matching this topic...</h2>
+                        <select name="lang-selector" id="lang-selector-id">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                        <select name="sort-selector" id="sort-selector-id">
+                            <option value="Best match">Best match</option>
+                            <option value="Most stars">Most stars</option>
+                            <option value="Fewest stars">Fewest stars</option>
+                        </select>
+                    </div>
+                    <ul id="project-list">
+                        <div class="border mb-40" >
+                            <li style = "margin: 16px;">
+                                <div>
+                                    <div class="d-flex flex-items-center font-size-20">
+                                        <div class = "username-and-title mt-10 mb-10">
+                                            <i class="fa fa-square"></i>
+                                            <span>username / project_name</span>
+                                        </div>
+                                        <div class="star-mark stick-right">
+                                            <button><i class="fa fa-star-o"></i>Star</button>
+                                        </div>
+                                    </div>
+                                    <div class="main-paragraph">
+                                        <ul class = "body-nav d-flex">
+                                            <li><button><i class="fa fa-code"></i>code</button></li>
+                                            <li><button><i class="fa fa-exclamation-circle"></i>Issues</button></li>
+                                            <li><button><i class="fa fa-file"></i>Pull requests</button></li>
+                                        </ul>
+                                        <p class="code-explanation mb-40"> Code Explanation Goes Here!</p>
+                                        <ul class="lang-used d-flex ml-20">
+                                            <li><button>lang1</button></li>
+                                            <li><button>lang2</button></li>
+                                            <li><button>lang3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="updated-date">Updated on MM DD</span>
+                                    <span class="main-lang">Main-Lang</span>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="border mb-40" >
+                            <li style = "margin: 16px;">
+                                <div>
+                                    <div class="d-flex flex-items-center font-size-20">
+                                        <div class = "username-and-title mt-10 mb-10">
+                                            <i class="fa fa-square"></i>
+                                            <span>username / project_name</span>
+                                        </div>
+                                        <div class="star-mark stick-right">
+                                            <button><i class="fa fa-star-o"></i>Star</button>
+                                        </div>
+                                    </div>
+                                    <div class="main-paragraph">
+                                        <ul class = "body-nav d-flex">
+                                            <li><button><i class="fa fa-code"></i>code</button></li>
+                                            <li><button><i class="fa fa-exclamation-circle"></i>Issues</button></li>
+                                            <li><button><i class="fa fa-file"></i>Pull requests</button></li>
+                                        </ul>
+                                        <p class="code-explanation mb-40"> Code Explanation Goes Here!</p>
+                                        <ul class="lang-used d-flex ml-20">
+                                            <li><button>lang1</button></li>
+                                            <li><button>lang2</button></li>
+                                            <li><button>lang3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="updated-date">Updated on MM DD</span>
+                                    <span class="main-lang">Main-Lang</span>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="border mb-40" >
+                            <li style = "margin: 16px;">
+                                <div>
+                                    <div class="d-flex flex-items-center font-size-20">
+                                        <div class = "username-and-title mt-10 mb-10">
+                                            <i class="fa fa-square"></i>
+                                            <span>username / project_name</span>
+                                        </div>
+                                        <div class="star-mark stick-right">
+                                            <button><i class="fa fa-star-o"></i>Star</button>
+                                        </div>
+                                    </div>
+                                    <div class="main-paragraph">
+                                        <ul class = "body-nav d-flex">
+                                            <li><button><i class="fa fa-code"></i>code</button></li>
+                                            <li><button><i class="fa fa-exclamation-circle"></i>Issues</button></li>
+                                            <li><button><i class="fa fa-file"></i>Pull requests</button></li>
+                                        </ul>
+                                        <p class="code-explanation mb-40"> Code Explanation Goes Here!</p>
+                                        <ul class="lang-used d-flex ml-20">
+                                            <li><button>lang1</button></li>
+                                            <li><button>lang2</button></li>
+                                            <li><button>lang3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="updated-date">Updated on MM DD</span>
+                                    <span class="main-lang">Main-Lang</span>
+                                </div>
+                            </li>
+                        </div>
+                      
+                    </ul>
+                </div>   
+                <div id = "sidebar" class="sidebar mr-8" style = "width:25%;">
+                    <ul>
+                        <li class = "mb-40">
+                            <h3>Improve this page</h3>
+                            <p class="mb-10">Add a description, image, and links to the clone-coding topic page so that developers can more easily learn about it.
+                            </p>
+                            <p class = "link-to-detail" style="color: blue;">Curate this topic</p>
+                        </li>
+                        <li>
+                            <h3>Add this topic to your repo</h3>
+                            <p class="mb-10">To associate your repository with the clone-coding topic, visit your repo's landing page and select "manage topics.
+                            </p>
+                            <p class = "link-to-detail" style="color: blue;">Learn more</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="contributors" style="margin-bottom: 70px;" class = "p-responsive center-width70p split-element d-flex">
+            <div class ="github-logo">
+                <img class="resize" src = "icon/GitHub_Logo.png">
+            </div>
+            <div class = "d-flex">
+                <ul class="contributors-list" style="display: inline;">
+                    <li class = "contributors-title">Product</li>
+                    <li>Features</li>
+                    <li>Security</li>
+                    <li>Team</li>
+                    <li>Enterprise</li>
+                </ul>
+                <ul class="contributors-list">
+                    <li class = "contributors-title">Platform</li>
+                    <li>API</li>
+                    <li>Partners</li>
+                    <li>Atom</li>
+                    <li>Electron</li>
+                </ul>
+                <ul class="contributors-list">
+                    <li class = "contributors-title">Support</li>
+                    <li>Help</li>
+                    <li>Community Forum</li>
+                    <li>Professional Services</li>
+                    <li>Learning Lab</li>
+                </ul>
+                <ul class="contributors-list">
+                    <li class = "contributors-title">Company</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer p-responsive center-width70p split-element d-flex" style="margin-bottom: 30px;">
+            <ul class = "footer-list">
+                <li>© 2020 GitHub, Inc.</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Site Map</li>
+                <li>What is Git?</li>
+            </ul>
+            <ul class = "footer-list">
+                <li>Logo1</li>
+                <li>Logo2</li>
+                <li>Logo3</li>
+                <li>Logo4</li>
+                <li>Logo5</li>
+            </ul>
+        </section>
+ 
+    </body>
+
+</html>

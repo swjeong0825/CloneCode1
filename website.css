@@ -1,0 +1,301 @@
+:root{
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --grey-dark-color: #909090;
+
+    --side-padding: 12px;
+    --logo-size: 6px;
+
+    --font-large:18px;
+    --font-medium:14px;
+    --font-small:12px;
+    --font-micro:10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+ul{
+    list-style-type: none;
+    display:inline;
+    text-align: center;
+}
+
+li{
+    float: left;
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+header > * {margin-left: 20px;}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+select{
+    border-radius: 6px;
+    padding: 10px
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.transparent-background{
+    background-color: transparent;
+}
+
+.padding10{
+    padding: 10px;
+}
+
+.navigation-icon{
+    float:right
+}
+
+header #search-box{
+    order: 1
+}
+
+#search-box{
+    background-color: transparent;
+    padding: 10px;
+    width: 400px;
+    color: white;
+}
+
+header .navigation-bar{
+    order: 2;
+    margin-top: 10px;
+}
+
+#test{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.float-right{
+    margin-left: 30%;
+}
+
+.white {
+    color:white;
+}
+
+.container {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+#navigation-bar{
+    display: flex;
+    flex-direction: row;
+    color: var(--grey-dark-color);
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+.dynamic-margin{
+    margin-left: auto; margin-right: 0
+}
+
+@media (min-width:1000px){
+    .p-responsive{
+        padding-left: 40px!important;
+        padding-right: 40px!important;
+    }
+}
+
+.stick-right{
+    margin-left:auto; 
+    margin-right:20px;
+}
+
+.center{
+  margin:auto;
+  width:50%  
+}
+.center-width70p{
+    margin:auto;
+    width:70%  
+}
+
+.center-width80p{
+    margin:auto;
+    width:80%  
+}
+
+.margin-right{
+    margin-right: 16px;
+}
+
+.ml-20{
+    margin-left: 20px!important;
+}
+
+.mr-16{
+    margin-right: 16px!important;
+}
+
+.mr-8{
+    margin-right: 8px!important;
+}
+
+.mt-10{
+    margin-top: 10px!important
+}
+
+.mb-10{
+    margin-bottom: 10px!important;
+}
+
+.mb-40{
+    margin-bottom: 40px!important;
+}
+
+#email-updates-button{
+    background-color: var(--blue-color);
+    color:var(--white-color);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: var(--font-medium);
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex!important;
+}
+
+.flex-items-center{
+    align-items: center!important;
+}
+#main-navigation-bar > * {margin-right: 16px;}
+
+.p-top-bottom32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.p-left-right16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.p16{
+    padding:16px;
+}
+
+.br6{
+    border-radius: 6px;
+}
+
+.border{
+    border: 1px solid var(--grey-dark-color)!important
+}
+
+.text-center{
+    text-align: center;
+}
+
+.split-element{
+    justify-content: space-between;
+}
+
+.split-section{
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+
+#sidebar >* {text-align: left;}
+#project-list li{
+    float:none;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+i{
+    margin-right: 5px;
+}
+
+.body-nav li{
+    margin-right: 15px;
+}
+
+.resize{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.no-flex{
+    flex:none;
+}
+
+/* .username-and-title{
+    margin-left: 16px;
+    margin-right: 16px;
+} */
+
+.contributors-list{
+    margin-left: 50px;
+}
+.contributors-list li{
+    margin-bottom: 20px;
+}
+
+
+.contributors-list > * {float:none;}
+
+
+.spacing-elements{
+    justify-content: space-between;
+}
+
+.github-logo{
+    width: 100px;
+    height: auto;
+}
+
+.footer-list >* {margin-right: 12px;}
